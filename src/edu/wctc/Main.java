@@ -28,8 +28,8 @@ public class Main {
 
         /**Begin maze run loop here**/
         do {
-            System.out.println(m.currentRoom.getDescription());
-            System.out.println("Possible exits are: " + m.currentRoom.getExits());
+            System.out.println(m.getCurrentRoomDescription());
+            System.out.println("Possible exits are: " + m.getCurrentRoomExits());
             System.out.println("Enter a command. To move, enter 'n' to move north, 's' to move south, 'e' to move east," +
                     "'w' to move west, 'u' to move up, or 'd' to move down.");
             System.out.println("To interact with the room, enter 'i'.");
@@ -42,7 +42,7 @@ public class Main {
             }
             else if (listOfMovements.contains(response)){
                 if (m.move(response)) {
-                    System.out.println("You move to " + m.currentRoom.roomName);
+                    System.out.println("You move to " + m.getCurrentRoomName());
                 }
                 else {
                     System.out.println("You can't move that way.");

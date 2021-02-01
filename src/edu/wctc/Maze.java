@@ -64,6 +64,18 @@ public class Maze  {
         }
     }
 
+    public String getCurrentRoomDescription(){
+        return currentRoom.getDescription();
+    }
+
+    public String getCurrentRoomExits(){
+        return currentRoom.getExits();
+    }
+
+    public String getCurrentRoomName(){
+        return currentRoom.getName();
+    }
+
     public int getPlayerScore(){
         return player.getScore();
     }

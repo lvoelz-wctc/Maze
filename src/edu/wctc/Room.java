@@ -45,7 +45,7 @@ public abstract class Room {
         return showExits.toString();
     }
 
-    public String getName(Room r){
+    public String getName(){
         return roomName;
     }
 
