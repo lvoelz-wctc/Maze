@@ -7,7 +7,7 @@ public class Entrance extends Room implements Lootable{
 
     public String getLoot = "You loot: A Steak, a Carrot, and a Cup of Metafiction.";
     public String alreadyLooted = "You've already looted the room.";
-    public String description = "The room contains a table where someone was preparing food. The table contains" +
+    public String description = "You are in a room. The room contains a table where someone was preparing food. The table contains" +
             " a Steak, a Carrot, and a Cup of Metafiction. You may loot the table.";
     public String steak = "Steak";
     public String carrot = "Carrot";
@@ -27,6 +27,7 @@ public class Entrance extends Room implements Lootable{
             player.addToInventory(carrot);
             player.addToInventory(cup);
             player.addToScore(5);
+            description = "You are in a room. The room contains a table where someone was preparing food. The table has been looted.";
             looted = true;
             return getLoot;
         }
