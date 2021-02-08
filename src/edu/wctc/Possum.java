@@ -21,6 +21,7 @@ public class Possum extends Room implements Interactable{
     public String interact(Player player) {
         player.addToScore(1);
         player.inventory.clear();
+        description = "The room appears to be a dungeon. The Direpossum has left the room.";
         return interact;
     }
 
